@@ -1,0 +1,105 @@
+{
+  "trailingSlash": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Permissions-Policy",
+          "value": "interest-cohort=()"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/img/(.*)",
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public,max-age=31536000,immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public,max-age=31536000,immutable"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers" : [
+        {
+          "key" : "Cache-Control",
+          "value" : "public,max-age=31536000,immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/staying-motivated-while-growing(/?)", "destination": "https://leadership.garden/articles/staying-motivated-while-growing/" },
+    { "source": "/engineering-managers-stop-coding(/?)", "destination": "https://leadership.garden/articles/engineering-managers-stop-coding/" },
+    { "source": "/kill-your-heroes(/?)", "destination": "https://leadership.garden/articles/kill-your-heroes/" },
+    { "source": "/this-is-how-i-am(/?)", "destination": "https://leadership.garden/articles/this-is-how-i-am/" },
+    { "source": "/the-basics-of-one-on-ones(/?)", "destination": "https://leadership.garden/articles/the-basics-of-one-on-ones/" },
+    { "source": "/questions-vs-directions(/?)", "destination": "https://leadership.garden/articles/questions-vs-directions/" },
+    { "source": "/learning-at-work-is-work(/?)", "destination": "https://leadership.garden/articles/learning-at-work-is-work/" },
+    { "source": "/thoughts-on-feedback(/?)", "destination": "https://leadership.garden/articles/thoughts-on-feedback/" },
+    { "source": "/top-10-questions-for-a-hiring-manager(/?)", "destination": "https://leadership.garden/articles/top-10-questions-for-a-hiring-manager/" },
+    { "source": "/goal-setting(/?)", "destination": "https://leadership.garden/articles/goal-setting/" },
+    { "source": "/covid-burnout-health(/?)", "destination": "https://leadership.garden/articles/covid-burnout-health/" },
+    { "source": "/stories-we-tell-ourselves(/?)", "destination": "https://leadership.garden/articles/stories-we-tell-ourselves/" },
+    { "source": "/how-to-stop-winning-arguments(/?)", "destination": "https://leadership.garden/articles/how-to-stop-winning-arguments/" },
+    { "source": "/four-dangerous-animals-of-product-development(/?)", "destination": "https://leadership.garden/articles/four-dangerous-animals-of-product-development/" },
+    { "source": "/technical-interview-myths(/?)", "destination": "https://leadership.garden/articles/technical-interview-myths/" },
+    { "source": "/acing-the-tech-interview(/?)", "destination": "https://leadership.garden/articles/acing-the-tech-interview/" },
+    { "source": "/communication-for-software-engineers(/?)", "destination": "https://leadership.garden/articles/communication-for-software-engineers/" },
+    { "source": "/biases-in-performance-reviews(/?)", "destination": "https://leadership.garden/articles/biases-in-performance-reviews/" },
+    { "source": "/kindness-software-engineering-superpower(/?)", "destination": "https://leadership.garden/articles/kindness-software-engineering-superpower/" },
+    { "source": "/engineering-manager-4-ways-of-failure(/?)", "destination": "https://leadership.garden/articles/engineering-manager-4-ways-of-failure/" },
+    { "source": "/active-listening-boosts-careers(/?)", "destination": "https://leadership.garden/articles/active-listening-boosts-careers/" },
+    { "source": "/the-5-common-mistakes-of-new-engineering-managers(/?)", "destination": "https://leadership.garden/articles/the-5-common-mistakes-of-new-engineering-managers/" },
+
+
+    { "source": "/newsletter(.*)", "destination": "https://leadership.garden/newsletter$1" },
+    { "source": "/tags/(.*)", "destination": "https://leadership.garden/tag/$1" },
+    { "source": "/feed(.*)", "destination": "https://leadership.garden/rss/" },
+    { "source": "/rss(.*)", "destination": "https://leadership.garden/rss/" },
+    { "source": "/atom(.*)", "destination": "https://leadership.garden/rss/" },
+
+
+
+
+
+    { "source": "/feed(/?)", "destination": "/feed.xml" },
+    { "source": "/fizzbuzz-in-css(/?)", "destination": "https://archive.ochronus.com/fizzbuzz-in-css/" },
+    { "source": "/react-reflux-example(/?)", "destination": "https://archive.ochronus.com/react-reflux-example/" },
+    { "source": "/react-what-the-flux(/?)", "destination": "https://archive.ochronus.com/react-what-the-flux/" },
+    { "source": "/how-to-create-a-chrome-extension(/?)", "destination": "https://archive.ochronus.com/how-to-create-a-chrome-extension/" },
+    { "source": "/the-illusion-of-private-browsing(/?)", "destination": "https://archive.ochronus.com/the-illusion-of-private-browsing/" },
+    { "source": "/generative-testing-in-clojure(/?)", "destination": "https://archive.ochronus.com/generative-testing-in-clojure/" },
+    { "source": "/brainfuck-in-clojure-in-40-lines(/?)", "destination": "https://archive.ochronus.com/brainfuck-in-clojure-in-40-lines/" },
+    { "source": "/learn-clojure-with-project-euler(/?)", "destination": "https://archive.ochronus.com/learn-clojure-with-project-euler/" },
+    { "source": "/git-tips-from-the-trenches(/?)", "destination": "https://archive.ochronus.com/git-tips-from-the-trenches/" },
+    { "source": "/confessions-of-a-knowledge-junkie(/?)", "destination": "https://archive.ochronus.com/confessions-of-a-knowledge-junkie/" },
+    { "source": "/cutting-the-pie(/?)", "destination": "https://archive.ochronus.com/cutting-the-pie/" },
+    { "source": "/digitalocean-review-comparison(/?)", "destination": "https://archive.ochronus.com/digitalocean-review-comparison/" },
+    { "source": "/google-apple-know-wifi-passwords-world(/?)", "destination": "https://archive.ochronus.com/google-apple-know-wifi-passwords-world/" },
+    { "source": "/docker-primer-django(/?)", "destination": "https://archive.ochronus.com/docker-primer-django/" },
+    { "source": "/steal-facebook-identity(/?)", "destination": "https://archive.ochronus.com/steal-facebook-identity/" },
+    { "source": "/user-tracking-http-redirect(/?)", "destination": "https://archive.ochronus.com/user-tracking-http-redirect/" },
+    { "source": "/tracking-without-cookies(/?)", "destination": "https://archive.ochronus.com/tracking-without-cookies/" },
+    { "source": "/git-bisect-debug-with-git(/?)", "destination": "https://archive.ochronus.com/git-bisect-debug-with-git/" },
+    { "source": "/prezi-webcam(/?)", "destination": "https://archive.ochronus.com/prezi-webcam/" },
+    { "source": "/a-rubyists-confessions-on-python(/?)", "destination": "https://archive.ochronus.com/a-rubyists-confessions-on-python/" },
+    { "source": "/top-technology-software-trends-2012-2013(/?)", "destination": "https://archive.ochronus.com/top-technology-software-trends-2012-2013/" },
+    { "source": "/http-head-request-good-uses(/?)", "destination": "https://archive.ochronus.com/http-head-request-good-uses/" },
+    { "source": "/top-5-trends-in-software-development(/?)", "destination": "https://archive.ochronus.com/top-5-trends-in-software-development/" }
+  ]
+}

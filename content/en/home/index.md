@@ -1,6 +1,8 @@
 ---
 title: "Hi, I'm Csaba Okrona"
-headless: true
+headless: false
 ---
+
+## a.k.a. ochronus
 
 Welcome to my site
