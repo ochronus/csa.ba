@@ -1,1 +1,0 @@
-Visit [Leadership Garden](https://leadership.garden/) for my blog
